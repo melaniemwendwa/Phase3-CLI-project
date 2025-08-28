@@ -93,10 +93,10 @@ python cli.py
 4. View Member Schedule
 0. Back
 
-• Add member -> Prompts for name, age and membership type (Monthly or Annual)
-• List Members -> Displays the members
-• Delete Member -> Promps ID and removes member.
-• View Member Schedule -> Shows all workouts assigned to a member
+- Add member -> Prompts for name, age and membership type (Monthly or Annual)
+- List Members -> Displays the members
+- Delete Member -> Promps ID and removes member.
+- View Member Schedule -> Shows all workouts assigned to a member
 
 ## 2. Trainers Menu
 
@@ -107,10 +107,10 @@ python cli.py
 4. View Trainer Workouts
 0. Back
 
-• Add Trainer- Register a trainer with name and specialty.
-• List Trainers -  View all trainers.
-• Delete Trainer - Prompts ID and removes trainer.
-• View Trainer Workouts - see workouts for a specific trainer.
+- Add Trainer- Register a trainer with name and specialty.
+- List Trainers -  View all trainers.
+- Delete Trainer - Prompts ID and removes trainer.
+- View Trainer Workouts - see workouts for a specific trainer.
 
 ## 3. Workouts Menu
 
@@ -121,10 +121,10 @@ python cli.py
 4. View Workout Members
 0. Back
 
-• Add workout - assign a workout to a trainer.
-• List workouts - view all workouts with assigned trainers.
-• Delete workout - remove workout by ID.
-• View Workout members - see members enrolled in a workout.
+- Add workout - assign a workout to a trainer.
+- List workouts - view all workouts with assigned trainers.
+- Delete workout - remove workout by ID.
+- View Workout members - see members enrolled in a workout.
 
 ## 4. Schedules Menu
 
@@ -134,9 +134,9 @@ python cli.py
 3. Delete Schedule
 0. Back
 
-• Add schedule - assign a workout to a member on a chosen day(s)
-• List schedule - view all schedules in the system.
-• Delete schedule - removes a schedule entry by ID.
+- Add schedule - assign a workout to a member on a chosen day(s)
+- List schedule - view all schedules in the system.
+- Delete schedule - removes a schedule entry by ID.
 
 
 ## DATABASE SCHEMA
