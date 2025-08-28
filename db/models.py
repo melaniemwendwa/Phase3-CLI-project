@@ -14,13 +14,13 @@ class Trainer(Base):
     name = Column(String, unique=True, nullable=False)
     specialty = Column(String, nullable=True)
 
-    # one-to-many: Trainer -> Workout
+
     workouts = relationship("Workout", back_populates="trainer", cascade="all, delete-orphan")
 
     def __repr__(self):
         return f"<Trainer {self.id}: {self.name} ({self.specialty or 'General'})>"
 
-    # property-like validation (ensures the attribute follows constraints)
+
     @validates("name")
     def validate_name(self, key, value):
         if not value or not value.strip():
