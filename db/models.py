@@ -20,6 +20,7 @@ class Trainer(Base):
     def __repr__(self):
         return f"<Trainer {self.id}: {self.name} ({self.specialty or 'General'})>"
 
+    # property-like validation (ensures the attribute follows constraints)
     @validates("name")
     def validate_name(self, key, value):
         if not value or not value.strip():

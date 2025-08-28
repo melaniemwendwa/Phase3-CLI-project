@@ -1,18 +1,17 @@
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
-from db import init_db
+from db import engine
 from db.models import Trainer, Workout, Member, Schedule
 from utils.helpers import prompt, safe_int
 
 DB_URL = "sqlite:///gym_manager.db"
 
 
+SessionLocal = sessionmaker(bind=engine)
+
 def get_session():
-    engine = create_engine(DB_URL, echo=False)
-    Session = sessionmaker(bind=engine)
-    init_db(engine)
-    return Session()
+    return SessionLocal()
 
 
 MEMBERSHIP_OPTIONS = ["Monthly", "Annual"]  # LIST
